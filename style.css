@@ -1,0 +1,260 @@
+/* styling tela, pozadie font, centrovanie */
+body{
+    margin: 0;
+    font-family: 'Quicksand' , sans-serif;
+    text-align: center;
+    background: url(img/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+/*vseobecne*/
+h2{
+  font-size: 38px;
+}
+a{
+  text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+  
+}
+/*horna navigacia*/
+.topnav {
+    background-color: rgb(190, 190, 190);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+ 
+  .topnav a {
+    display: inline-block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: auto;
+  }
+  
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+/*prva section s menom a fotkou*/
+ #top{
+   padding-bottom: 100px;
+   padding-top: 100px;
+ }
+ #top h1{
+   font-size: 70px;
+   color: white;
+   margin-bottom: 0px;
+   width: 75vw;
+   margin: auto;
+ }
+ #top h2{
+   margin-top: 0px;
+   color: #94A3BA;
+   font-size: 25px;
+ }
+ .rounded-circle{
+   height: 300px;
+  border-radius: 50%;
+  overflow: visible;
+  
+}
+/*sekcia about*/
+#about{
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background-color: white;
+  font-size: 25px;
+}
+#about .about_me{
+  width: 50vw;
+  margin: auto;
+}
+#about h2{
+  margin-top: 0px;
+}
+/*sekcia studies*/
+#studies{
+  font-size: 25px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  color: white;
+}
+.button {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button:hover{
+  color: black;
+  background-color: white;
+}
+.button.clear{
+  clear: both;
+}
+#primary{
+  padding-top: 30px;
+  width: 50vw;
+  margin: auto;
+}
+#high{
+  padding-top: 30px;
+  width: 50vw;
+  margin: auto;
+}
+#university{
+  padding-top: 30px;
+  width: 50vw;
+  margin: auto;
+}
+/*sekcia hobbies*/
+#hobbies{
+  background-color: white;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+#hobbies h2{
+  padding-bottom: 30px;
+}
+#hobbies .hobby{
+  width: 300px;
+  margin:20px;
+  display:inline-block;
+  vertical-align: top;
+
+}
+#hobbies .hobby2{
+  width: 300px;
+  margin:20px;
+  display:inline-block;
+  vertical-align: top;
+}
+.left{
+  text-align: left;
+}
+.logo{
+  width: 75px;
+}
+/*sekcia gallery*/
+#gallery{
+  font-size: 25px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  color: white;
+}
+#gallery .gallery{
+  clear: both;
+  width: 50vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#gallery .videos{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/*sekcia contact*/
+#contact{
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background-color: white;
+  font-size: 25px;
+}
+#contact h2{
+  margin-top: 0px;
+}
+i{
+  color: black;
+  padding: 20px;
+}
+iframe{
+  width: 50vw;
+  height: 50vh;
+}
+.margin{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/*sekcia footer*/
+footer{
+  color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+}
+
+/*stylovanie pre malu obrazovku pod 600px */
+@media screen and (max-width: 600px) {
+/*zmena velkosti pozadia*/ 
+   body{
+     background-size: auto 100vh;
+   }
+/*zobrazovanie navigacie*/
+    .topnav a{
+      display: none;
+    }
+    .topnav a:not(:no-button) {
+      display: none;}
+    .topnav a.icon {
+      padding: 0;
+      display: block;
+    }
+/*zmensovanie profilovej fotky*/
+    .rounded-circle{
+      height: auto;
+    width: 50vw;
+     border-radius: 50%;
+     overflow: visible;
+    }
+/*zmensovanie textov aby boli citatelne*/
+    #primary{
+      padding-top: 30px;
+      width: 75vw;
+      margin: auto;
+      font-size: 18px;
+    }
+    #high{
+      padding-top: 30px;
+      width: 75vw;
+      margin: auto;
+      font-size: 18px;
+    }
+    #university{
+      padding-top: 30px;
+      width: 75vw;
+      margin: auto;
+      font-size: 18px;
+    }
+    #about .about_me{
+      width: 75vw;
+      margin: auto;
+      font-size: 18px;
+    }
+    
+  }
+/*zobrazenie navigacie pri zmenseni*/
+    .topnav.responsive a {
+      float: none;
+      display: block;
+    }
+  
